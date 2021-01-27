@@ -1,5 +1,5 @@
 test_average (__main__.TestExercice) ... ERROR
-test_square (__main__.TestExercice) ... ERROR
+test_square (__main__.TestExercice) ... ok
 test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
@@ -17,23 +17,6 @@ Traceback (most recent call last):
   File "/home/runner/work/2021h-ch3-exercices-Sooju/2021h-ch3-exercices-Sooju/exercice.py", line 16, in average
     return average (a)
 TypeError: average() missing 2 required positional arguments: 'b' and 'c'
-
-======================================================================
-ERROR: test_square (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 28, in test_square
-    output = [exercice.square(v) for v in values]
-  File "test_exercice.py", line 28, in <listcomp>
-    output = [exercice.square(v) for v in values]
-  File "/home/runner/work/2021h-ch3-exercices-Sooju/2021h-ch3-exercices-Sooju/exercice.py", line 12, in square
-    return square (a)
-  File "/home/runner/work/2021h-ch3-exercices-Sooju/2021h-ch3-exercices-Sooju/exercice.py", line 12, in square
-    return square (a)
-  File "/home/runner/work/2021h-ch3-exercices-Sooju/2021h-ch3-exercices-Sooju/exercice.py", line 12, in square
-    return square (a)
-  [Previous line repeated 972 more times]
-RecursionError: maximum recursion depth exceeded
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -99,6 +82,6 @@ First differing element 0:
 + [-0.08668468618238503, 0.17598251810595048, 6.283490739798685, 6.9973449482748] : Mauvais calcul de degres -> radians
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.006s
+Ran 7 tests in 0.002s
 
-FAILED (failures=4, errors=2)
+FAILED (failures=4, errors=1)
